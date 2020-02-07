@@ -4,20 +4,20 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
-
+#include <stdbool.h>
+#include <string.h>
 
 void print_alphabet(int a[]);
 void print_all(FILE * f);
 
 int main(int argc, char** argv){
+
+	FILE * f;
 	if (argc != 2){
-		fprintf(stderr, "Program takes ONE argument.\n");
+		fprintf(stderr, "Invalid arguments.\n");
 		exit(EXIT_FAILURE);
 	}
 
-	FILE * f = fopen(argv[1], "r");
-	print_all(f);
-	fclose(f);
 
 	f = fopen(argv[1], "r");
 	int alphabet[26] = {0};
