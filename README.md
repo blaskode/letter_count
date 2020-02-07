@@ -2,5 +2,5 @@
 A C program that counts the frequency of letters in a text file. First it prints the text file.
 
 <div>
-	<img src="/example.png">
+	<img src="/countexample.png">
 </div>
